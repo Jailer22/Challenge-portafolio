@@ -1,0 +1,483 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #694646;
+}
+
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: var(--cor-de-fundo);
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.title-card{
+    width: 99%;
+    height: 450px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10%;
+    border-radius: 10px;  
+}
+
+.title__container{
+  width: 50%;
+  float: right;
+  margin-top: 30px;
+}
+
+.title__container img{
+  margin-top: 90px;
+}
+
+.title__container p{
+margin-top: 30px;
+}
+
+.title__div{
+  width: 50%;
+  float: left;
+  margin-top: 30px;
+}
+
+.title__div h2{
+  margin-top: 15px;
+}
+
+.title__div ul{
+  margin-top: 20px;
+}
+
+.about__paragraph{
+  text-align: justify;
+  margin-left: 10px;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: scale(1.5);
+    transition: all 2s ease-in-out;
+    -webkit-transform: rotateY(-360deg);
+  }
+
+  .logo-principal img{
+    width: 100px;
+    height: 100px;
+    z-index: 999;
+    float: left;
+    margin-top: -25px;
+  }
+
+.menu-nav {
+    background: #F5F5F5;
+    padding: 15px;
+    text-align: right;
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index:99;
+    margin-right: 10px;
+    box-shadow: 0 0 4px #847d7d;
+  }
+  
+  .menu-nav a {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-top: 25px;
+    color: #3a3838;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .titulo,
+  .skills__title,
+  .hobbies__title,
+  .about__title,
+  .academic__title,
+  .title-section{
+    font-size: 22pt;
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about__title h3 {
+    margin-top: 10px;
+  }
+  .about__title h4 {
+    margin-top: 10px;
+  }
+
+  .academic__courses__box{
+    margin: 0 auto;
+    display: block;
+  }
+
+ul  {
+  list-style-type: none; /* Elimina los marcadores de la lista */
+  padding: 0; /* Elimina el espacio interno por defecto de la lista */
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+
+li {
+  display: inline-block; /* Muestra los elementos <li> en línea */
+  margin-right: 15px; /* Añade un margen a la derecha entre los elementos */
+}
+
+.about__container, .skills__line,
+.hobbies__line, 
+.academic__courses{
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.title__container{
+text-align: center;
+}
+
+.skills__line,
+.hobbies__line, 
+.academic__courses{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cuatro columnas iguales */
+  gap: 20px; /* Espacio entre los íconos */ 
+}
+
+.skills__box , 
+.hobbies__box, 
+.academic__courses__box{
+  display: flex;
+  justify-content: center; /* Centra los íconos horizontalmente */
+  margin-bottom: 20px; /* Espacio entre filas */
+}
+
+.skills__img, .hobbies__img {
+  margin: 0 5px; /* Espacio entre íconos */
+}
+
+.experiencia-profesional{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.experiencie__info{
+  width: 18%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 4px #847d7d;
+}
+
+.experience img{
+  display: block;
+  width: 70%;
+  height: 70%;
+  border-radius: 5px;
+  
+}
+
+.experiencie__info:hover {
+  transition-property: all;
+  transition-property: transform;
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.experience__title, .experience__text h2, h3{
+  width: auto;
+  font-size: 16px;
+}
+
+.academic__courses__box li{
+  display: block;
+}
+
+form {
+  width: 32%;
+  height: 80vh;
+  margin: 0px auto;
+  border-radius: 8px;
+  padding: 70px 0;
+  text-align: center;
+}
+
+h2 {
+  color: #413b3b;
+  font-size: 40px;
+}
+input {
+  padding: 10px 0;
+  display: inline-block;
+  margin-top: 30px;
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid #8a8686;
+  background: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  margin-top: 50px;
+  border-radius: 10px;
+  color: #e3d5d5;
+  border: none;
+  background-image: linear-gradient(to right, #1d62e2 0%, #243949 100%);
+}
+
+
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+/*Mobile*/
+
+
+/*Tablet*/
+@media (max-width: 768px) {
+
+.title-card{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.title__div {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.title__container{
+  width: 99%;
+  margin-top: 30px;
+}
+
+
+.title__container p{
+  margin-top: 10px;
+  font-size: 14px;
+  }
+
+  .title__container img{
+    margin-top: 20px;
+    }
+    
+.img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: scale(1.5);
+    transition: all 2s ease-in-out;
+    -webkit-transform: rotateY(-360deg);
+    box-shadow: #847d7d 11px 1px 11px 12xp;
+  }
+
+  .logo-principal img{
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+  }
+
+.menu-nav {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  }
+  
+  .menu-nav a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 25px;
+    color: #3a3838;
+    padding: 0px;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 500;
+  }
+
+  .titulo , .skills__title, .hobbies__title, .about__title, .academic__title, .title-section{
+    font-size: 16pt;
+    margin-top: 60px;
+    text-align: center;
+    padding: 30px;
+  }
+
+
+        
+.title__div ul {
+  margin-top: 0px;
+}
+
+li {
+  display: inline-block; /* Muestra los elementos <li> en línea */
+  margin-right: 10px;
+  font-size: 14px; /* Añade un margen a la derecha entre los elementos */
+}
+
+.about__container, .skills__line,
+.hobbies__line, 
+.academic__courses{
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.title__container{
+text-align: center;
+}
+
+.skills__line,
+.hobbies__line, 
+.academic__courses{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Cuatro columnas iguales */
+  gap: 17px; /* Espacio entre los íconos */ 
+}
+
+.skills__box , 
+.hobbies__box, 
+.academic__courses__box{
+  display: flex;
+  justify-content: center; /* Centra los íconos horizontalmente */
+  margin-bottom: 15px; /* Espacio entre filas */
+}
+
+.skills__img, .hobbies__img {
+  margin: 0 5px; /* Espacio entre íconos */
+}
+
+.experiencia-profesional{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.experiencie__info{
+  width: 35%;
+  height: 45%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 4px #847d7d;
+}
+
+.experience__title, .experience__text h2, h3{
+font-size: 16px;
+
+}
+
+.experience img{
+  display: block;
+  width: 70%;
+  height: 70%;
+  border-radius: 5px;
+  
+}
+
+.experiencie__info:hover {
+  transition-property: all;
+  transition-property: transform;
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+form {
+  width: 80%;
+  height: 80vh;
+  margin: 0px auto;
+  border-radius: 8px;
+  padding: 70px 0;
+  text-align: center;
+}
+
+h2 {
+  color: #413b3b;
+  font-size: 40px;
+}
+input {
+  padding: 10px 0;
+  display: inline-block;
+  margin-top: 30px;
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid #8a8686;
+  background: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  margin-top: 50px;
+  border-radius: 10px;
+  color: #e3d5d5;
+  border: none;
+  background-image: linear-gradient(to right, #1d62e2 0%, #243949 100%);
+}
+
+
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+}
